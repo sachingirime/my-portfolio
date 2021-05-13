@@ -1,13 +1,64 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://unpkg.com/tailwindcss/typography@0.2.x/dist/typography.min.css");
+@import url("https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+.cursive {
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.prose img {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.home-name {
+  font-size: 150px;
+}
+
+.navHeader {
+  background-color: black;
+  color: white;
+
+  height: 70px;
+  font-size: 25px;
+  font-family: "Segoe UI";
+}
+
+.navDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.nav {
+  display: flex;
+}
+
+.navHome {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6px;
+  padding-right: 3px;
+  margin-right: 40px;
+}
+
+.navProject {
+  display: inline-flex;
+  align-items: center;
+  padding-top: 6px;
+  padding-right: 3px;
+  margin-right: 8px;
+}
+
+.socialIcon {
+  display: inline-flex;
+  margin-right: 8px;
+  margin-top: 10px;
+  align-items: center;
+  padding-top: 6px;
+  padding-right: 3px;
 }
