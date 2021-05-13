@@ -13,7 +13,7 @@ function App() {
   return (
     <BrowserRouter>
     <NavBar/>
-    <Footer/>
+    
     <Switch>
       <Route component = {Home} path ="/" exact ></Route>
       
