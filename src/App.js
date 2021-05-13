@@ -6,12 +6,14 @@ import SinglePost from "./components/SinglePost";
 
 import Project from "./components/Project";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer1";
 
 
 function App() {
   return (
     <BrowserRouter>
     <NavBar/>
+    <Footer/>
     <Switch>
       <Route component = {Home} path ="/" exact ></Route>
       
@@ -20,6 +22,7 @@ function App() {
       <Route component = {Project} path ="/project"></Route>
 
     </Switch>
+    
     </BrowserRouter>
   )
 
