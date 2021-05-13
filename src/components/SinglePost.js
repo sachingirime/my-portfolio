@@ -46,14 +46,20 @@ export default function SinglePost(){
 
     return(
 
-        <main className="bg-white min-h-screen p-12">
+        <main className="bg-white min-h-screen p-10">
             <article className="container shadow-lg mx-auto bg-white rounded-lg">
                 <header className="relative">
-                    <div className="absolute h-full w-full flex items-center justify-center p-8">
-                        <div className="bg-white bg-opacity-75 rounded p-12">
-                            <h1 className="cursive text-3xl lg:text-6xl mb-4">{singlePost.title}</h1>
-                            <div className="flex justify-center "></div>
-                            <p>Additional infos</p>
+                    <div className="absolute h-full w-full mt-20  flex items-center text-center justify-center ">
+                        <div className="bg-white mt-40  w-full   bg-opacity-40 rounded p-2">
+                            <h1 className="font-bold text-3xl lg:text-6xl mb-2">{singlePost.title}</h1>
+                            <div className="flex justify-center mr-8 ml-8 mb-4 text-xl font-bold">
+                                <p className="ml-2 mr-8">Completed on: {" "}{singlePost.date}</p>
+                                <p className="ml-2 mr-8">Project Type: {" "}{singlePost.projectType}</p>
+                                <p>Source:{" "}<a href={singlePost.link} target = "_blank"className="underline hover:text-blue-400">CLICK HERE</a></p>
+                                
+
+                            </div>
+                            
 
                         </div>
                     </div>
